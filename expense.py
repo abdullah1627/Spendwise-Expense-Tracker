@@ -30,9 +30,3 @@ class Expense:
         return f"[{self.expense_id}] {self.date} | {self.category} | {self.amount} | {self.note}"
         pass
 
-if __name__ == "__main__":
-    e = Expense(1, 500.0, "Food", "2026-10-11", "Lunch")
-    print(e)
-    data = e.to_dict()
-    print(data)
-    print(Expense.from_dict(data)) 
